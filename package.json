@@ -1,0 +1,20 @@
+{
+  "name": "animal-shelter",
+  "version": "1.0.0",
+  "description": "Application catered towards an animal shelters webpage ",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start ",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marywebby/animal-shelter.git"
+  },
+  "author": "Joycell Johnson, Corbin Johns, Mary Webby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marywebby/animal-shelter/issues"
+  },
+  "homepage": "https://github.com/marywebby/animal-shelter#readme"
+}
