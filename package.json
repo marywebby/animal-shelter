@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/marywebby/animal-shelter/issues"
   },
-  "homepage": "https://github.com/marywebby/animal-shelter#readme"
+  "homepage": "https://github.com/marywebby/animal-shelter#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
