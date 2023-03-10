@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Shelter</title>
+</head>
+
+<body>
+    <div class="flex-column justify-space-around">
+            <header class="display-flex justify-space-between align-center p-2">
+                <h1>Animal Shelter</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/featured">Featured</li>
+                        <li><a href="/adoption">Adopt Me!</li>
+                        <li><a href="/missing">Missing</li>
+                        {{if logged_in}}
+                        <li><a href="/postAdoption">Add Missing</li>
+                        <li><script src="/js/logout.js"></script>Log Out</li>
+                        {{else}}
+                        <li><a href="/login">Log In</li>
+                        {{/if}}
+                    </ul>
+                </nav>
+            </header>
+            <main class="container container-fluid mt-5">
+                {{{ body }}}
+            </main>
+            <footer>
+                <h1><a href="https://github.com/marywebby"></h1>
+            </footer>
+    </div>
+</body>
