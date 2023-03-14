@@ -34,6 +34,10 @@ Animal.init(
     sex: {
         type: DataTypes.BOOLEAN, 
         allowNull: false
+    },
+    isMissing: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
     }
   },
   {
