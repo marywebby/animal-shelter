@@ -10,6 +10,10 @@ router.get('/', (req, res) => {
     username: req.session.username})
 });
 
+router.get('/featured', (req, res) => {
+  res.render('featured')
+});
+
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
@@ -17,6 +21,18 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/missing', (req,res) => {
+  res.render('missing')
+});
+
+router.get('/postMissing', (req,res) => {
+  if (req.session.loggedIn) {
+    res.render('postMissing');
+  } else {
+    res.redirect('/login');
+  }
 });
 
 module.exports = router;
