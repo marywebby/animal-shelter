@@ -5,7 +5,7 @@ const { User} = require('../models');
 
 
 router.get('/', (req, res) => {
-  res.render('homepage', {
+  res.render('featured', {
     loggedIn: req.session.loggedIn,
     username: req.session.username})
 });

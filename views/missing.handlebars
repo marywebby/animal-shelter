@@ -1,0 +1,13 @@
+<section>
+ <h1>Missing Animals</h1>
+
+<ul>
+  {{#each animals}}
+    {{#if isMissing}}
+      <li>{{name}}</li>
+      <li>{{breed}}</li>
+      <li>{{age}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
+</section>
