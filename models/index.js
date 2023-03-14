@@ -1,6 +1,4 @@
-// use index.js to create associations between models
-// import all models
-
+const Animal = require('./animal');
 const User = require('./User');
 
-module.exports = { User};
+module.exports = { User, Animal };

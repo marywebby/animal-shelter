@@ -1,0 +1,27 @@
+
+[
+    {
+        "name": "Millie",
+        "animal": true,
+        "breed": "Welsh Terrier",
+        "age": 13, 
+        "hypoallergenic": true, 
+        "sex": true 
+    },
+    {
+        "name": "Kiba",
+        "animal": false,
+        "breed": "Shorthaired Tabby",
+        "age": 7, 
+        "hypoallergenic": false, 
+        "sex": false 
+    },
+    {
+        "name": "Sergio",
+        "animal": true,
+        "breed": "Chihuahua Mix",
+        "age": 4, 
+        "hypoallergenic": false, 
+        "sex": false 
+    }
+  ]

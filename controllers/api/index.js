@@ -1,7 +1,8 @@
 const router = require('express').Router();
+const userRoutes = require('./user-routes');
+const animalRoutes = require('./animal-routes');
 
-const userRoutes = require('./user-routes.js');
-
-router.use('/users', userRoutes);
+router.use('/user', userRoutes);
+router.use('/animal', animalRoutes);
 
 module.exports = router;
