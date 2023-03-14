@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS animal_shelter_db;
+DROP DATABASE IF EXISTS animals_db;
 
-CREATE DATABASE animal_shelter_db;
+CREATE DATABASE animals_db;
