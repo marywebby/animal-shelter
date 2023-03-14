@@ -1,16 +1,13 @@
 <section>
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <h1>Missing Animals</h3>
-        </div>
-    </div>
-        {{each animals as |animal|}}
-    <div class="row mb-4 animal">
-        <div class="col-md-5">
-            <h2>{{animal.name}}</h2>
-            <h2>{{animal.age}}</h2>
-            <h2>{{animal.breed}}</h2>
-            <h2>{{animal.lastSeen}}</h2>
-        </div>
-    </div>
+ <h1>Missing Animals</h1>
+
+<ul>
+  {{#each animals}}
+    {{#if isMissing}}
+      <li>{{name}}</li>
+      <li>{{breed}}</li>
+      <li>{{age}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
 </section>
