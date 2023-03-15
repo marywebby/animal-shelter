@@ -6,7 +6,8 @@
         "breed": "Welsh Terrier",
         "age": 13, 
         "hypoallergenic": true, 
-        "sex": true 
+        "sex": true,
+        "isMissing": false
     },
     {
         "name": "Kiba",
@@ -14,7 +15,8 @@
         "breed": "Shorthaired Tabby",
         "age": 7, 
         "hypoallergenic": false, 
-        "sex": false 
+        "sex": false,
+        "isMissing": false 
     },
     {
         "name": "Sergio",
@@ -22,6 +24,7 @@
         "breed": "Chihuahua Mix",
         "age": 4, 
         "hypoallergenic": false, 
-        "sex": false 
+        "sex": false,
+        "isMissing": false 
     }
   ]
