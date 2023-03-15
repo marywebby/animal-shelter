@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Animal } = require('../../models');
 
+
 // ROUTE FOR GETTING ONLY CATS 
 
 router.get('/cats', async (req, res) => {
