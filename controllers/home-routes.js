@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 //const { Post, User, Comment } = require('../models');
-const { User} = require('../models');
+const { User, Animal } = require('../models');
 
 
 router.get('/', (req, res) => {
@@ -23,9 +23,6 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/missing', (req,res) => {
-  res.render('missing')
-});
 
 router.get('/postMissing', (req,res) => {
   if (req.session.loggedIn) {
@@ -34,5 +31,14 @@ router.get('/postMissing', (req,res) => {
     res.redirect('/login');
   }
 });
+
+router.get('/missing', async (req, res) => {
+  const missingAnimals = await Animal.findAll({
+  }); 
+  const animals = missingAnimals.map((animal) => animal.get({ plain: true }));
+  console.log(animals);
+  res.render('missing', { animals });
+});
+
 
 module.exports = router;
