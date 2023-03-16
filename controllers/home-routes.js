@@ -11,10 +11,13 @@ router.get('/', (req, res) => {
 });
 
 router.get('/featured', (req, res) => {
-  res.render('featured')
+  res.render('featured', {
+    loggedIn: req.session.loggedIn,
+    username: req.session.username})
 });
 
 router.get('/login', (req, res) => {
+  console.log(req.session, "LOGIN IS WORKING")
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
@@ -26,10 +29,23 @@ router.get('/login', (req, res) => {
 
 router.get('/postMissing', (req,res) => {
   if (req.session.loggedIn) {
-    res.render('postMissing');
+    res.render('postMissing', {
+      loggedIn: req.session.loggedIn,
+      username: req.session.username})
   } else {
     res.redirect('/login');
   }
+});
+
+router.get('/logout', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('featured', {
+    loggedIn: req.session.loggedIn,
+    username: req.session.username})
 });
 
 router.get('/missing', async (req, res) => {
@@ -37,8 +53,9 @@ router.get('/missing', async (req, res) => {
   }); 
   const animals = missingAnimals.map((animal) => animal.get({ plain: true }));
   console.log(animals);
-  res.render('missing', { animals });
+  res.render('missing', { animals, 
+    loggedIn: req.session.loggedIn,
+    username: req.session.username})
+  
 });
-
-
 module.exports = router;
