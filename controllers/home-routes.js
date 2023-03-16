@@ -35,4 +35,8 @@ router.get('/postMissing', (req,res) => {
   }
 });
 
+router.get('/adoption', (req,res) => {
+  res.render('adoption')
+});
+
 module.exports = router;
