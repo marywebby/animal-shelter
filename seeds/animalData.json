@@ -26,5 +26,14 @@
         "hypoallergenic": false, 
         "sex": false,
         "isMissing": false 
+    },
+    {
+        "name": "Missing Animal",
+        "animal": true,
+        "breed": "Missing",
+        "age": 4, 
+        "hypoallergenic": false, 
+        "sex": false,
+        "isMissing": true 
     }
   ]
