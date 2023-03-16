@@ -34,6 +34,17 @@
         "age": 4, 
         "hypoallergenic": false, 
         "sex": false,
-        "isMissing": true 
+        "isMissing": true,
+        "lastSeen": "Elm Street"
+    },
+    {
+        "name": "Penny",
+        "animal": false,
+        "breed": "Sphynx cat",
+        "age": 8, 
+        "hypoallergenic": true, 
+        "sex": true,
+        "isMissing": true,
+        "lastSeen": "Wall Street"
     }
   ]

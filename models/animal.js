@@ -38,6 +38,10 @@ Animal.init(
     isMissing: {
       type: DataTypes.BOOLEAN,
       allowNull: false
+    },
+    lastSeen: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   },
   {

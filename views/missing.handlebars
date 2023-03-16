@@ -1,13 +1,12 @@
 <section>
   <h1>Missing Animals</h1>
-    <ul>
       {{#each animals as |animal|}}
         {{#if animal.isMissing}}
-          <li>{{animal.name}}</li>
-          <li>{{animal.breed}}</li>
-          <li>{{animal.age}}</li>
+        <article class="animal">
+          <h2>{{animal.name}}</h2>
+          <p>{{animal.name}} is a {{animal.breed}}. They are {{animal.age}} years old. They were last seen at {{animal.lastSeen}}</p>
+        </article>
         {{/if}}
-    </ul>
   {{else}}
     <p>No missing animals found.</p>
       {{/each}}
