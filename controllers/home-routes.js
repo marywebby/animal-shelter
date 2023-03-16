@@ -58,4 +58,10 @@ router.get('/missing', async (req, res) => {
     username: req.session.username})
   
 });
+
+
+router.get('/adoption', (req,res) => {
+  res.render('adoption')
+});
+
 module.exports = router;
