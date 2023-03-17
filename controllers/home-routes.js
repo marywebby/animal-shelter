@@ -39,7 +39,7 @@ router.get('/featured', async (req, res) => {
         age: randomCat.age,
         breed: randomCat.breed,
         sex: randomCat.sex,
-        isHypoallergenic: randomCat.isHypoallergenic,
+        hypoallergenic: randomCat.hypoallergenic,
       },
       loggedIn: req.session.loggedIn,
       username: req.session.username
