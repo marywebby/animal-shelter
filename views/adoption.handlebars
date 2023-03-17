@@ -5,18 +5,36 @@
  <h2>FILTERS</h2>
      <ul>
             <ul>
-                <li><a href="/dogs">DOGS</a></li>
-                <li><a href="/cats">CATS</a></li>
-                <li><a href="/hypoallergenic">HYPOALLERGENIC</a></li>
-                <li><a href="/female">FEMALE ANIMALS</a></li>
-                <li><a href="/male">MALE ANIMALS</a></li>
+                <li><a href="/adoption?animal=true">DOGS</a></li>
+                <li><a href="/adoption?animal=false">CATS</a></li>
+                <li><a href="/adoption?hypoallergenic=true">HYPOALLERGENIC</a></li>
+                <li><a href="/adoption?sex=true">FEMALE ANIMALS</a></li>
+                <li><a href="/adoption?sex=false">MALE ANIMALS</a></li>
             </ul>
     </ul>
 </div> 
 
 <div class="column">
     <h3> BROWSE THROUGH OUR ANIMALS! </h3>
-           
+           {{#each animals as |animal|}}
+                <div class="card">
+                    {{!-- <img src="../public/css/images/millie.png" alt="" style="width:100%"> --}}
+                    <img src="../public/css/images/{{animal.name}}.png" alt="{{animal.name}}-photo" style="width:100%">
+                    <div class="container">
+                        <h4><b>Name: {{animal.name}}</b></h4>
+                        <p>Breed: {{animal.breed}}</p>
+                        <p>Age: {{animal.age}}</p>
+                        {{#if animal.sex}}
+                            <p>Female</p>
+                        {{else}}
+                            <p>Male</p>
+                        {{/if}}
+                        {{#if animal.hypoallergenic}}
+                            <p>Hypoallergenic ✔️</p>
+                        {{/if}}
+                     </div>
+                </div>
+           {{/each}}
 </div>
 
 
