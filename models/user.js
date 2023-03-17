@@ -16,7 +16,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    username: { // please do not change back to 'name'. It's 'username' because 'username' is used in home-routes.js.
       type: DataTypes.STRING,
       allowNull: false,
     },
