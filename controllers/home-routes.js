@@ -32,7 +32,7 @@ router.get('/featured', async (req, res) => {
         age: randomDog.age,
         breed: randomDog.breed,
         sex: randomDog.sex,
-        isHypoallergenic: randomDog.isHypoallergenic,
+        hypoallergenic: randomDog.hypoallergenic,
       },
       randomCat: {
         name: randomCat.name,
