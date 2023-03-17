@@ -75,7 +75,10 @@ const adoptionAnimals = await Animal.findAll({
   where
 }); 
 const animals = adoptionAnimals.map((animal) => animal.get({ plain: true }));
-  res.render('adoption', {animals});
+  res.render('adoption', {animals, 
+    loggedIn: req.session.loggedIn,
+    username: req.session.username
+  })
 });
 // how to you enter more into the query string 
 
