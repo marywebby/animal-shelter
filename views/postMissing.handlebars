@@ -1,6 +1,7 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Welcome, {{user.name}}!</h2>
+    <p>So sorry to hear about your missing pet, let us know how to help!</p>
   </div>
 </div>
 
@@ -8,27 +9,49 @@
   <div class="col-md-6">
     <h3>Tell Us About Your Missing Pet</h3>
 
-    <form class="form new-project-form">
+   
+    <form class="form missing-pet-form" action="/postMissing" method="POST">
       <div class="form-group">
-        <label for="project-name">Pet Name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="pet-name">Pet Name:</label>
+        <input class="form-input" type="text" id="pet-name" name="pet-name" />
       </div>
       <div class="form-group">
-        <label for="project-funding">Pet Age</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
+        <label for="pet-type">Pet Type:</label>
+        <select class="form-input" id="pet-type" name="pet-type">
+          <option value="true">Dog</option>
+          <option value="false">Cat</option>
+        </select>
       </div>
       <div class="form-group">
-        <label for="project-desc">Pet Breed</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="pet-breed">Pet Breed:</label>
+        <input class="form-input" type="text" id="pet-breed" name="pet-breed" />
       </div>
       <div class="form-group">
-        <label for="project-desc">Last Seen</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="pet-age">Pet Age:</label>
+        <input class="form-input" type="number" id="pet-age" name="pet-age" />
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <label for="pet-allergies">Hypoallergenic:</label>
+        <select class="form-input" id="pet-allergies" name="pet-allergies">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="pet-sex">Pet Sex:</label>
+        <select class="form-input" id="pet-sex" name="pet-sex">
+          <option value="true">Female</option>
+          <option value="false">Male</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="last-seen">Last Seen:</label>
+        <input class="form-input" type="text" id="last-seen" name="last-seen" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit</button>
       </div>
     </form>
-  </div>
+
 
 <script src="./js/profile.js"></script>

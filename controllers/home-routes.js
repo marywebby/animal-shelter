@@ -37,6 +37,28 @@ router.get('/postMissing', (req,res) => {
   }
 });
 
+// Handle form submission
+router.post('/postMissing', async (req, res) => {
+  try {
+    // Create a new record in the Animal model with the information submitted by the user
+    const animal = await Animal.create({
+      name: req.body['pet-name'],
+      animal: req.body['pet-type'] === 'dog',
+      breed: req.body['pet-breed'],
+      age: parseInt(req.body['pet-age']),
+      hypoallergenic: req.body['pet-allergies'] === 'no',
+      sex: req.body['pet-sex'] === 'female',
+      isMissing: true,
+      lastSeen: req.body['last-seen'],
+    });
+    // Redirect the user to the missing page with their missing animal displayed
+    res.redirect('/missing');
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
 router.get('/logout', (req, res) => {
   if (!req.session.loggedIn) {
     res.redirect('/');
