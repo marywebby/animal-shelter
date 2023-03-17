@@ -2,18 +2,52 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 //const { Post, User, Comment } = require('../models');
 const { User, Animal } = require('../models');
+const { Op } = require('sequelize');
 
 
-router.get('/', (req, res) => {
-  res.render('featured', {
-    loggedIn: req.session.loggedIn,
-    username: req.session.username})
+router.get('/', async (req, res) => {
+  res.redirect('/featured');
 });
 
-router.get('/featured', (req, res) => {
-  res.render('featured', {
-    loggedIn: req.session.loggedIn,
-    username: req.session.username})
+router.get('/featured', async (req, res) => {
+  try {
+    // Get one random dog and one random cat from the Animal model where isMissing is false
+    const animals = await Animal.findAll({
+      where: {
+        isMissing: false,
+        animal: {
+          [Op.or]: [true, false],
+        },
+      },
+    });
+    const dogs = animals.filter((animal) => animal.animal === true);
+    const cats = animals.filter((animal) => animal.animal === false);
+    const randomDog = dogs[Math.floor(Math.random() * dogs.length)];
+    const randomCat = cats[Math.floor(Math.random() * cats.length)];
+
+    // Render the featured page with the data for the random dog and cat
+    res.render('featured', {
+      randomDog: {
+        name: randomDog.name,
+        age: randomDog.age,
+        breed: randomDog.breed,
+        sex: randomDog.sex,
+        isHypoallergenic: randomDog.isHypoallergenic,
+      },
+      randomCat: {
+        name: randomCat.name,
+        age: randomCat.age,
+        breed: randomCat.breed,
+        sex: randomCat.sex,
+        isHypoallergenic: randomCat.isHypoallergenic,
+      },
+      loggedIn: req.session.loggedIn,
+      username: req.session.username
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
 });
 
 router.get('/login', (req, res) => {
@@ -22,6 +56,8 @@ router.get('/login', (req, res) => {
     res.redirect('/');
     return;
   }
+
+
 
   res.render('login');
 });

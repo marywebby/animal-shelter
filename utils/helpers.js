@@ -8,5 +8,20 @@ module.exports = {
         }
 
         return word;
+    },
+    get_name: (animal) => {
+        return animal.name;
+    },
+    get_age: (animal) => {
+        return animal.age;
+    },
+    get_breed: (animal) => {
+        return animal.breed;
+    },
+    get_sex: (animal) => {
+        return animal.sex ? 'Female' : 'Male';
+    },
+    get_hypo: (animal) => {
+        return animal.hypoallergenic ? 'True' : 'False';
     }
 };

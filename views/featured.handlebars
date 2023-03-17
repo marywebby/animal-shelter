@@ -1,2 +1,24 @@
-<h1>The main page</h1>
-<p>Main pargraph.</p>
+<div class="row">
+  <div class="col-md-6">
+    {{#if randomDog}}
+      <h3>Featured Dog: {{randomDog.name}}</h3>
+      <p>Age: {{randomDog.age}}</p>
+      <p>Breed: {{randomDog.breed}}</p>
+      <p>Sex: {{get_sex randomDog}}</p>
+      <p>Hypoallergenic: {{get_hypo randomDog}}</p>
+    {{else}}
+      <p>No dogs found.</p>
+    {{/if}}
+  </div>
+  <div class="col-md-6">
+    {{#if randomCat}}
+      <h3>Featured Cat: {{randomCat.name}}</h3>
+      <p>Age: {{randomCat.age}}</p>
+      <p>Breed: {{randomCat.breed}}</p>
+      <p>Sex: {{get_sex randomCat}}</p>
+      <p>Hypoallergenic: {{get_hypo randomCat}}</p>
+    {{else}}
+      <p>No cats found.</p>
+    {{/if}}
+  </div>
+</div>
