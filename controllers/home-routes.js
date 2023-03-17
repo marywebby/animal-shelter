@@ -60,8 +60,27 @@ router.get('/missing', async (req, res) => {
 });
 
 
-router.get('/adoption', (req,res) => {
-  res.render('adoption')
+router.get('/adoption', async (req,res) => {
+const where = {isMissing: false};
+if (req.query.sex) {
+  where.sex = req.query.sex === "true"
+};
+if (req.query.hypoallergenic) {
+  where.hypoallergenic = req.query.hypoallergenic === "true"
+}; 
+if (req.query.animal) {
+  where.animal = req.query.animal === "true"
+}; 
+const adoptionAnimals = await Animal.findAll({
+  where
+}); 
+const animals = adoptionAnimals.map((animal) => animal.get({ plain: true }));
+  res.render('adoption', {animals, 
+    loggedIn: req.session.loggedIn,
+    username: req.session.username
+  })
 });
+// how to you enter more into the query string 
+
 
 module.exports = router;
