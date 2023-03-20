@@ -29,6 +29,7 @@ router.get('/featured', async (req, res) => {
     res.render('featured', {
       randomDog: {
         name: randomDog.name,
+        photo: randomDog.photo,
         age: randomDog.age,
         breed: randomDog.breed,
         sex: randomDog.sex,
@@ -36,6 +37,7 @@ router.get('/featured', async (req, res) => {
       },
       randomCat: {
         name: randomCat.name,
+        photo: randomCat.photo,
         age: randomCat.age,
         breed: randomCat.breed,
         sex: randomCat.sex,
