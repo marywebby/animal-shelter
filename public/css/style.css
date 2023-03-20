@@ -176,3 +176,61 @@
     padding: 1%;
     font-size: 110%;
   }
+
+  .card {
+    display: flex;
+    flex: auto;
+    float: left;
+    border-style: black;
+    border-width: 5px;
+  }
+
+  .column {
+    float: left;
+}
+
+  .left {
+      width: 25%;
+  }
+
+  .right {
+      width: 75%;
+  }
+
+  li {
+    display: inline-flex;
+    width: 100px;
+    margin-right: 20px;
+    list-style: none;
+    border: black;
+  }
+
+  .adoption-header {
+    color: pink;
+    font-family: monospace;
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+
+  .nav-item {
+    display: inline;
+    width: 100px;
+    margin-right: 5px;
+    list-style: none;
+    color: rgb(157, 103, 112);
+    font-style: rgb(181, 115, 126);
+  }
+
+  .adopt-box {
+    box-shadow: rgb(97, 139, 90);
+    border-color: rgb(97, 139, 90);
+    box-sizing: border-box;
+    border-style:groove;
+    border-radius: 15px;
+  }
+
+  #random-photo {
+    width: 100px;
+  height: 100px;
+  }
