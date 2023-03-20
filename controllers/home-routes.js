@@ -32,14 +32,14 @@ router.get('/featured', async (req, res) => {
         age: randomDog.age,
         breed: randomDog.breed,
         sex: randomDog.sex,
-        isHypoallergenic: randomDog.isHypoallergenic,
+        hypoallergenic: randomDog.hypoallergenic,
       },
       randomCat: {
         name: randomCat.name,
         age: randomCat.age,
         breed: randomCat.breed,
         sex: randomCat.sex,
-        isHypoallergenic: randomCat.isHypoallergenic,
+        hypoallergenic: randomCat.hypoallergenic,
       },
       loggedIn: req.session.loggedIn,
       username: req.session.username
