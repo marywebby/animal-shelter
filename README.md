@@ -39,6 +39,10 @@
     View an animal shelter's website and see adoptable pets and missing pets
     Create an account
     Use my account to post my own missing animals to the missing animals page
+    
+    
+    
+https://user-images.githubusercontent.com/118230483/226426523-bd835a37-97d8-4034-bc16-87ffeafcb899.mov
 
 
   ## Licenses
@@ -51,7 +55,7 @@
     npm test
 
 
-  ## Questions
+## Questions
   Should you have any questions or concerns about this repo, or if you wish to view our other projects, feel free to email and or visit us at the following: 
     <br>Mary Webby - marywebby1999@gmail.com (https://github.com/marywebby)
     <br>Corbin Johns - cxrstings@gmail.com (https://github.com/cxrstings)
