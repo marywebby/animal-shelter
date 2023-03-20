@@ -31,17 +31,6 @@
         "isMissing": false 
     },
     {
-        "name": "Missing Animal",
-        "photo": "https://images.dog.ceo/breeds/poodle-toy/n02113624_223.jpg",
-        "animal": true,
-        "breed": "Missing",
-        "age": 4, 
-        "hypoallergenic": false, 
-        "sex": false,
-        "isMissing": true,
-        "lastSeen": "Elm Street"
-    },
-    {
         "name": "Penny",
         "photo":"https://purr.objects-us-east-1.dream.io/i/chern.jpg" ,
         "animal": false,
@@ -184,9 +173,9 @@
         "isMissing": false
     },{
         "name": "Mike",
-        "photo": "https://purr.objects-us-east-1.dream.io/i/44jtgl.jpg",
+        "photo": "https://images.dog.ceo/breeds/sheepdog-english/n02105641_6270.jpg",
         "animal": false,
-        "breed": "Welsh Terrier",
+        "breed": "Corgi",
         "age": 4, 
         "hypoallergenic": true, 
         "sex": false,

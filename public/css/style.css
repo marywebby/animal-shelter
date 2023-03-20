@@ -12,20 +12,21 @@
 
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: white;
     font-weight: bold;
     transition: color .1s;
+    font-size: 15px;
   }
 
   a:hover {
-    color: #3486eb;
+    color: rgb(120, 170, 120);
   }
 
   button {
-    background-color: #225ca3;
+    background-color: rgb(78, 121, 71);
     border: 0;
     padding: 1%;
-    color: white;
+    color: rgb(231, 238, 231);
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
@@ -33,7 +34,7 @@
   }
 
   button:hover {
-    background-color: #3486eb;
+    background-color: rgb(73, 137, 73);
   }
 
   .post-list {
@@ -75,7 +76,7 @@
   }
 
   header {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 3px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -180,7 +181,6 @@
   .card {
     display: flex;
     flex: auto;
-    float: left;
     border-style: black;
     border-width: 5px;
   }
@@ -206,9 +206,9 @@
   }
 
   .adoption-header {
-    color: pink;
-    font-family: monospace;
-    font-size: 35px;
+    color: rgb(99, 137, 99);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
     margin-bottom: 15px;
   }
 
@@ -216,21 +216,117 @@
   .nav-item {
     display: inline;
     width: 100px;
-    margin-right: 5px;
+    margin: 20px;
+    margin-top: 25px;
     list-style: none;
     color: rgb(157, 103, 112);
     font-style: rgb(181, 115, 126);
   }
 
-  .adopt-box {
-    box-shadow: rgb(97, 139, 90);
-    border-color: rgb(97, 139, 90);
-    box-sizing: border-box;
-    border-style:groove;
-    border-radius: 15px;
+  #random-photo {
+    width: 120px;
+  height: 120px;
+  }
+
+  /* MAIN.HANDLEBARS */
+
+  /* main title in top corner */
+  .main-title {
+    color: rgb(228, 228, 228);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-stretch: expanded;
+  }
+
+  .main-background {
+    background-color: rgb(156, 198, 156);
+  }
+
+  #header-background {
+    background-color: rgb(99, 137, 99);
+  }
+
+  .top-nav {
+    margin: 50px;
+  }
+
+  #adopt-animal-cards {
+    margin: 20px;
+    border: rgb(255, 255, 255);
+    border-width: 5px;
+    border-style: dotted;
+    background-color: rgb(190, 227, 190);
+
   }
 
   #random-photo {
-    width: 100px;
-  height: 100px;
+    margin: 20px;
+  }
+
+  .animal-name {
+    color: rgb(13, 48, 13);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+
+  .traits {
+    color: rgb(72, 103, 72);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+
+  .featured-text {
+    margin: 15px;
+    font-size: 23px;
+    color: #496946;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .col-md-5 {
+    background-color: #bedfba;
+    margin: 35px;
+    border-radius: 15px;
+  }
+
+  #random-featured-photo {
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    border: rgb(255, 254, 254);
+    border-style:solid;
+    border-width: 10px;
+  }
+
+  .missing-animal-header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: 44, 69, 45;
+    text-align: center;
+    font-size: 45px;
+    border-bottom: 3px solid rgb(44, 69, 45);
+  }
+
+  .animal {
+    background-color: #c9e9c6;
+    color: 44, 69, 45;
+    margin: 20px;
+  }
+
+  .miss-animal-name {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+    border-bottom: 2px solid rgb(75, 117, 76);
+  }
+
+  .miss-animal-desc {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+  }
+
+  .add-miss-animal {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }

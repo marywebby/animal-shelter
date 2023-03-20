@@ -23,19 +23,19 @@
 
 <div>
            {{#each animals as |animal|}}
-                <div class="card">
+                <div id="adopt-animal-cards"class="card">
                     <img src={{animal.photo}} id="random-photo" alt="random-photo">
                     <div class="container">
-                        <h4><b>Name: {{animal.name}}</b></h4>
-                        <p>Breed: {{animal.breed}}</p>
-                        <p>Age: {{animal.age}}</p>
+                        <h4 class="animal-name"><b>Name: {{animal.name}}</b></h4>
+                        <p class="traits">Breed: {{animal.breed}}</p>
+                        <p class="traits">Age: {{animal.age}}</p>
                         {{#if animal.sex}}
-                            <p>Female</p>
+                            <p class="traits">Female</p>
                         {{else}}
-                            <p>Male</p>
+                            <p class="traits">Male</p>
                         {{/if}}
                         {{#if animal.hypoallergenic}}
-                            <p>Hypoallergenic ✔️</p>
+                            <p class="traits">Hypoallergenic ✔️</p>
                         {{/if}}
                      </div>
                 </div>

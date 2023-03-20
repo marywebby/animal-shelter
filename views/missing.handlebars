@@ -1,10 +1,10 @@
 <section>
-  <h1>Missing Animals</h1>
+  <h1 class="missing-animal-header">Missing Animals</h1>
       {{#each animals as |animal|}}
         {{#if animal.isMissing}}
         <article class="animal">
-          <h2>{{animal.name}}</h2>
-          <p>{{animal.name}} is a {{animal.breed}}. They are {{animal.age}} years old. They were last seen at {{animal.lastSeen}}</p>
+          <h2 class="miss-animal-name">{{animal.name}}</h2>
+          <p class="miss-animal-desc">{{animal.name}} is a {{animal.breed}}. They are {{animal.age}} years old. They were last seen at {{animal.lastSeen}}</p>
         </article>
         {{/if}}
   {{else}}
@@ -12,6 +12,6 @@
       {{/each}}
 
   {{#if loggedIn}}
-    <a href="/postMissing">Report Missing Animal</a>
+    <a class="add-miss-animal" href="/postMissing">Report Missing Animal</a>
   {{/if}}
 </section>
