@@ -11,6 +11,10 @@ Animal.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    photo: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,

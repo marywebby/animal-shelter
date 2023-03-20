@@ -2,6 +2,7 @@
 [
     {
         "name": "Millie",
+        "photo": "https://images.dog.ceo/breeds/cockapoo/Guri1.jpg",
         "animal": true,
         "breed": "Welsh Terrier",
         "age": 13, 
@@ -11,6 +12,7 @@
     },
     {
         "name": "Kiba",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/20170101_095813.jpg", 
         "animal": false,
         "breed": "Shorthaired Tabby",
         "age": 7, 
@@ -20,6 +22,7 @@
     },
     {
         "name": "Sergio",
+        "photo": "https://images.dog.ceo/breeds/bouvier/n02106382_2535.jpg",
         "animal": true,
         "breed": "Chihuahua Mix",
         "age": 4, 
@@ -29,6 +32,7 @@
     },
     {
         "name": "Missing Animal",
+        "photo": "https://images.dog.ceo/breeds/poodle-toy/n02113624_223.jpg",
         "animal": true,
         "breed": "Missing",
         "age": 4, 
@@ -39,6 +43,7 @@
     },
     {
         "name": "Penny",
+        "photo":"https://purr.objects-us-east-1.dream.io/i/chern.jpg" ,
         "animal": false,
         "breed": "Sphynx cat",
         "age": 8, 
