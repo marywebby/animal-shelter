@@ -51,5 +51,145 @@
         "sex": true,
         "isMissing": true,
         "lastSeen": "Wall Street"
+    },
+    {
+        "name": "George",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/20110922_hamish.JPG",
+        "animal": false,
+        "breed": "American Shorthair",
+        "age": 9, 
+        "hypoallergenic": true, 
+        "sex": false,
+        "isMissing": false
+    },
+    {
+        "name": "Sabrina",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/oSd9QV9.jpg",
+        "animal": false,
+        "breed": "Persian",
+        "age": 4, 
+        "hypoallergenic": false, 
+        "sex": true,
+        "isMissing": false
+    },
+    {
+        "name": "Molly",
+        "photo": "https://images.dog.ceo/breeds/mix/Annabelle6.jpg",
+        "animal": true,
+        "breed": "German Shepard",
+        "age": 10, 
+        "hypoallergenic": false, 
+        "sex": true,
+        "isMissing": false
+    },
+    {
+        "name": "Slash",
+        "photo": "https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_921.jpg",
+        "animal": true,
+        "breed": "Brown Lab",
+        "age": 2, 
+        "hypoallergenic": false, 
+        "sex": true,
+        "isMissing": false
+    },
+    {
+        "name": "ButterCup",
+        "photo": "https://images.dog.ceo/breeds/greyhound-italian/n02091032_2472.jpg",
+        "animal": true,
+        "breed": "Portuguese Water Dog",
+        "age": 6, 
+        "hypoallergenic": true, 
+        "sex": true,
+        "isMissing": false
+    },{
+        "name": "Rex",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/img_20170608_071732.jpg",
+        "animal": false,
+        "breed": "Balinese",
+        "age": 11, 
+        "hypoallergenic": true, 
+        "sex": false,
+        "isMissing": false
+    },{
+        "name": "Dynomite",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/20160403_135254.jpg",
+        "animal": false,
+        "breed": "Devon Rex",
+        "age": 3, 
+        "hypoallergenic": true, 
+        "sex": true,
+        "isMissing": false
+    },{
+        "name": "Connor",
+        "photo": "https://images.dog.ceo/breeds/retriever-curly/n02099429_3029.jpg",
+        "animal": true,
+        "breed": "Whippet",
+        "age": 8, 
+        "hypoallergenic": false, 
+        "sex": false,
+        "isMissing": false
+    },{
+        "name": "Charlie",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/screenshot-2017-12-19instagrampostbymotherrussianov6,2014at938amutc.png",
+        "animal": false,
+        "breed": "Javanese",
+        "age": 7, 
+        "hypoallergenic": false, 
+        "sex": true,
+        "isMissing": false
+    },{
+        "name": "Barker",
+        "photo": "https://images.dog.ceo/breeds/australian-shepherd/forest.jpg",
+        "animal": true,
+        "breed": "Austrailian Shepard",
+        "age": 5, 
+        "hypoallergenic": false, 
+        "sex": false,
+        "isMissing": false
+    },{
+        "name": "Tracy",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/nhyM9.jpg",
+        "animal": false,
+        "breed": "Burmese",
+        "age": 1, 
+        "hypoallergenic": false, 
+        "sex": true,
+        "isMissing": false
+    },{
+        "name": "Tessa",
+        "photo": "https://images.dog.ceo/breeds/bulldog-english/murphy.jpg",
+        "animal": true,
+        "breed": "American Bulldog",
+        "age": 8, 
+        "hypoallergenic": false, 
+        "sex": true,
+        "isMissing": false
+    },{
+        "name": "Trenton",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/awwwwwwkitty.jpg",
+        "animal": false,
+        "breed": "",
+        "age": 1, 
+        "hypoallergenic": true, 
+        "sex": false,
+        "isMissing": false
+    },{
+        "name": "Rosie",
+        "photo": "https://images.dog.ceo/breeds/terrier-kerryblue/n02093859_1852.jpg",
+        "animal": true,
+        "breed": "Airdale",
+        "age": 9, 
+        "hypoallergenic": true, 
+        "sex": true,
+        "isMissing": false
+    },{
+        "name": "Mike",
+        "photo": "https://purr.objects-us-east-1.dream.io/i/44jtgl.jpg",
+        "animal": false,
+        "breed": "Welsh Terrier",
+        "age": 4, 
+        "hypoallergenic": true, 
+        "sex": false,
+        "isMissing": false
     }
   ]
